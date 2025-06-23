@@ -75,16 +75,26 @@ CSSは、HTML要素の見た目を定義します。このコードは以下の�
 
 <h1>JavaScript（ページの機能）</h1>
 JavaScriptは、ユーザーの操作に応じてページを動的に変更する機能を提供します。
- * const nameInput = document.getElementById("nameInput");: nameInputというIDを持つHTML要素（テキスト入力欄）を取得し、nameInputという定数に格納します。
- * const submitButton = document.getElementById("submitButton");: submitButtonというIDを持つHTML要素（ボタン）を取得し、submitButtonという定数に格納します。
- * const displayArea = document.getElementById("displayArea");: displayAreaというIDを持つHTML要素（名前が表示される段落）を取得し、displayAreaという定数に格納します。
- * submitButton.addEventListener("click", () => { ... });: submitButton（ボタン）がクリックされたときに実行される処理を定義しています。
-   * const enteredName = nameInput.value;: nameInput（テキスト入力欄）に入力された値を取得し、enteredNameという定数に格納します。
-   * if (enteredName) { ... } else { ... }: enteredName（入力された名前）が存在するかどうかを確認します。
-     * if (enteredName): もしenteredNameに何か値が入力されていれば（空でなければ）、以下の処理が実行されます。
-       * displayArea.textContent = こんにちは、${enteredName}さん！;: displayArea（名前が表示される段落）のテキスト内容を「こんにちは、[入力された名前]さん！」に更新します。
-     * else: もしenteredNameが空であれば、以下の処理が実行されます。
-       * displayArea.textContent = "何か入力してください。";: displayAreaのテキスト内容を「何か入力してください。」に更新します。
+
+- const nameInput = document.getElementById("nameInput");: nameInput という ID を持つ HTML 要素（テキスト入力欄）を取得し、nameInput という定数に格納します。
+
+- const submitButton = document.getElementById("submitButton");: submitButton という ID を持つ HTML 要素（ボタン）を取得し、submitButton という定数に格納します。
+
+- const displayArea = document.getElementById("displayArea");: displayArea という ID を持つ HTML 要素（名前が表示される段落）を取得し、displayArea という定数に格納します。
+
+- submitButton.addEventListener("click", () => { ... });: submitButton（ボタン）がクリックされたときに実行される処理を定義しています。
+
+  - const enteredName = nameInput.value;: nameInput（テキスト入力欄）に入力された値を取得し、enteredName という定数に格納します。
+
+  - if (enteredName) { ... } else { ... }: enteredName（入力された名前）が存在するかどうかを確認します。
+
+    - if (enteredName): もし enteredName に何か値が入力されていれば（空でなければ）、以下の処理が実行されます。
+
+      - displayArea.textContent = こんにちは、${enteredName}さん！;: displayArea（名前が表示される段落）のテキスト内容を「こんにちは、[入力された名前]さん！」に更新します。
+
+    - else: もし enteredName が空であれば、以下の処理が実行されます。
+
+      - displayArea.textContent = "何か入力してください。";: displayArea のテキスト内容を「何か入力してください。」に更新します。
 
 <h1>【まとめ】</h1>
 このウェブページは、HTMLで基本的な構造を作り、CSSで魅力的な見た目を与え、JavaScriptでユーザーが入力した名前を表示するというシンプルなインタラクティブ機能を提供しています。
