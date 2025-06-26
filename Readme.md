@@ -6,37 +6,37 @@
 <h1>HTML（ページの構造）</h1>
 HTML は、ウェブページの骨組みを定義します。このコードは以下の要素で構成されています。
 
-- <!DOCTYPE html>: この文書がHTML5であることを宣言しています。
+<h3>!DOCTYPE html</h3>: この文書がHTML5であることを宣言しています。
 
-- <html lang="ja">: ページの言語が日本語であることを示します。
+<h3>html lang="ja"</h3>>: ページの言語が日本語であることを示します。
 
-- <head>: ページのメタ情報（目に見えない情報）が含まれます。
+<h3>head</h3>>: ページのメタ情報（目に見えない情報）が含まれます。
 
-  - <meta charset="UTF-8" />: 文字エンコーディングをUTF-8に設定し、文字化けを防ぎます。
+<h3>meta charset="UTF-8"</h3>: 文字エンコーディングをUTF-8に設定し、文字化けを防ぎます。
 
-  - <meta name="viewport" content="width=device-width, initial-scale=1.0" />: 異なるデバイスでの表示を最適化するための設定です。
+<h3>meta name="viewport" content="width=device-width, initial-scale=1.0"</h3>: 異なるデバイスでの表示を最適化するための設定です。
 
-  - <title>フォーム入力値の表示</title>: ブラウザのタブに表示されるページのタイトルです。
+<h3>title</h3>: ブラウザのタブに表示されるページのタイトルです。
 
-  - <link rel="stylesheet" href="style.css" />: style.cssというファイルからデザイン（CSS）を読み込みます。
+<h3>link rel="stylesheet" href="style.css"</h3>: style.cssというファイルからデザイン（CSS）を読み込みます。
 
-- <body>: ページに表示されるすべてのコンテンツが含まれます。
+<h3>body</h3>>: ページに表示されるすべてのコンテンツが含まれます。
 
-  - <div class="box">入力された内容を表示</div>: 「入力された内容を表示」というテキストを持つボックスです。後述のCSSで特別な見た目が与えられます。
+<h3>div class="box"</h3>: 「入力された内容を表示」というテキストを持つボックスです。後述のCSSで特別な見た目が与えられます。
 
-  - <br />: 改行を行いコンテンツを読みやすくするタグです。
+<h3>br<h3>: 改行を行いコンテンツを読みやすくするタグです。
 
-  - <div class="input-form">: 入力フォームを囲むためのコンテナです。
+<h3>div class="input-form"</h3>: 入力フォームを囲むためのコンテナです。
 
-    - <label for="nameInput">名前を入力してください:</label>: nameInput という ID を持つ入力欄と関連付けられたラベルです。ユーザーに名前の入力を促します。
+<h3>label for="nameInput"</h3>: nameInput という ID を持つ入力欄と関連付けられたラベルです。ユーザーに名前の入力を促します。
 
-    - <input type="text" id="nameInput" placeholder="あなたの名前" />: テキスト入力欄です。ユーザーが名前を入力する場所で、nameInput という ID を持っています。「あなたの名前」というプレースホルダーテキストが表示されます。
+<h3>input type="text" id="nameInput" placeholder="あなたの名前"</h3>: テキスト入力欄です。ユーザーが名前を入力する場所で、nameInput という ID を持っています。「あなたの名前」というプレースホルダーテキストが表示されます。
 
-    - <button id="submitButton">表示</button>: クリックできるボタンです。submitButton という ID を持っています。
+<h3>button id="submitButton"</h3>: クリックできるボタンです。submitButton という ID を持っています。
 
-  - <p id="displayArea">ここに表示されます。</p>: 入力された名前が表示される段落です。最初は「ここに表示されます。」というテキストが表示され、displayAreaというIDを持っています。
+<h3>p id="displayArea"</h3>: 入力された名前が表示される段落です。最初は「ここに表示されます。」というテキストが表示され、displayAreaというIDを持っています。
 
-  - <script src="script.js"></script>: script.jsというファイルからJavaScriptコードを読み込みます。これにより、ページに動的な機能が追加されます。
+<h3>script src="script.js"</h3>: script.jsというファイルからJavaScriptコードを読み込みます。これにより、ページに動的な機能が追加されます。
 
 <h1>CSS（ページの見た目）</h1>
 CSSは、HTML要素の見た目を定義します。このコードは以下のスタイルを設定しています。
